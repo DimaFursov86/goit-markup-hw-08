@@ -55,11 +55,13 @@
   .mobile-menu-wraper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     height: 100%;
   }
-  .mobile-menu__contact-list :not(:last-child) {
-    margin-bottom: 32px;
+  .mobile-menu__contact-list {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
   .mobile-menu__contact-tel-link {
     font-family: Roboto;
@@ -76,6 +78,11 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--portfolio-cards-description-color);
+  }
+  .menu-social-links {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 0;
   }
 }
 // .header {
