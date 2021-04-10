@@ -38,6 +38,11 @@
                         </li>
                     </ul>
                 </nav>
+                <button type="button" class="burger-btn" data-menu-button>
+                    <svg class="burger-btn__icon" width="24px" height="16px">
+                        <use href="./images/sprite.svg#icon-burger"></use>
+                    </svg>
+                </button>
                 <div class="mail-tel-links">
                     <a class="mail-tel-links__mail-color font-specs link" href="mailto:info@devstudio.com">
                         <svg class="social-list-ikon" width="16px" height="12px">
@@ -52,10 +57,57 @@
                         +38 099 111 11 11</a>
                 </div>
             </div>
+            <div class="mobile-menu" data-menu>
+                <button type="button" class="mobile-menu-close-btn" data-menu-close>
+                    <svg class="mobile-menu-close-btn__icon" width="19px" height="19px">
+                        <use href="./images/sprite.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu-wraper">
+                    <ul class="mobile-menu__list list">
+                        <li class="mobile-menu__item">
+                            <a href="./index.html" class="mobile-menu__link link">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./portfolio.html" class="mobile-menu__link operating-page link">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="mobile-menu__link link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="contact-list-social-link-wraper">
+                        <ul class="mobile-menu__contact-list list">
+                            <li class="mobile-menu__contact__item">
+                                <a href="tel:380961111111" class="mobile-menu__contact-tel-link link">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu__contact__item">
+                                <a href="mailto:info@devstudio.com"
+                                    class="mobile-menu__contact-mail-link link">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-social-links list">
+                            <li class="menu-social-link__item">
+                                <a href="" class="menu-social-link__link link">Instagram</a>
+                            </li>
+                            <li class="menu-social-link__item">
+                                <a href="" class="menu-social-link__link link">Twitter</a>
+                            </li>
+                            <li class="menu-social-link__item">
+                                <a href="" class="menu-social-link__link link">Facebook</a>
+                            </li>
+                            <li class="menu-social-link__item">
+                                <a href="" class="menu-social-link__link link">LinkedIn</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                </div>
+            
+            </div>
     </header>
     <main>
         <!--Navigation on page and Portfolio cards-->
-        <section class="navigation-portfolio-section">
+        <!-- <section class="navigation-portfolio-section">
             <div class="container">   
                 <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="navigation-portfolio-section__list list">
@@ -196,11 +248,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-adress-wraper">
                 <a class="navigation-logo-link footer-adress-wraper__logo-margin link" href="./index.html">Web<span
@@ -264,7 +316,8 @@
                 </div>
             </form>
         </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
