@@ -1,19 +1,10 @@
 .dignity-section {
-  padding-top: 110px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .dignity-section__list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.dignity-section__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-  height: 251px;
 }
 .dignity-section__icon-size {
   height: 120px;
@@ -30,7 +21,8 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .dignity-section__description {
   font-size: 14px;
@@ -38,3 +30,81 @@
   letter-spacing: 0.03em;
   color: var(--portfolio-cards-description-color);
 }
+.dignity-section__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dignity-section__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 251px;
+  }
+  .dignity-section__list {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .dignity-section__item {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  .dignity-section__title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dignity-section__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  .dignity-section {
+    padding-top: 110px;
+    padding-bottom: 94px;
+  }
+  .dignity-section__title {
+    margin-bottom: 17px;
+  }
+}
+
+// .dignity-section {
+//   padding-top: 110px;
+//   padding-bottom: 94px;
+// }
+// .dignity-section__list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-left: -30px;
+//   margin-top: -30px;
+// }
+
+// .dignity-section__item {
+//   flex-basis: calc(100% / 4 - 30px);
+//   margin-left: 30px;
+//   margin-top: 30px;
+//   height: 251px;
+// }
+// .dignity-section__icon-size {
+//   height: 120px;
+//   margin-bottom: 30px;
+//   background: var(--backgroud-body-studio);
+//   border-radius: 4px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .dignity-section__title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   margin-bottom: 17px;
+// }
+// .dignity-section__description {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   color: var(--portfolio-cards-description-color);
+// }
