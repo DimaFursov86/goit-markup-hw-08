@@ -4,26 +4,121 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero.jpg);
+    url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
-.hero__br {
-  width: 696px;
-  margin: 0 auto;
-}
-
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--navigation-logo-studio-footer);
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
+
+@media screen and (min-width: 480px) {
+  .hero__br {
+    width: 360px;
+    margin: 0 auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-mobile@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-size: cover;
+    max-width: 1200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-size: cover;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero@2x.jpg);
+    }
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .hero__br {
+    width: 696px;
+  }
+}
+
+// .hero {
+//   background: var(--hero-section-background-color);
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/hero.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   max-width: 1600px;
+//   margin: 0 auto;
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+// }
+// .hero__br {
+//   width: 696px;
+//   margin: 0 auto;
+// }
+// .hero__title {
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: var(--navigation-logo-studio-footer);
+//   margin-bottom: 34px;
+// }
