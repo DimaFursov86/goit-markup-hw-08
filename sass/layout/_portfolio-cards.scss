@@ -14,10 +14,9 @@
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
-}
-.portfolio-cards-list__img {
-  width: 100%;
-  max-height: 294px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 .portfolio-cards-wraper {
   border: 1px solid #eeeeee;
@@ -45,7 +44,6 @@
 .portfolio-cards-list__wraper {
   position: relative;
   overflow: hidden;
-  perspective: 1000px;
 }
 .overlay {
   position: absolute;
@@ -69,13 +67,26 @@
 }
 @media screen and (min-width: 768px) {
   .portfolio-cards-list__item {
+    display: flex;
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    & > .link {
+      display: flex;
+    }
   }
   .portfolio-cards-list {
     margin-left: -30px;
     margin-top: -30px;
+  }
+  .portfolio-cards-list__link {
+    flex-direction: column;
+  }
+  .portfolio-cards-wraper {
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {
