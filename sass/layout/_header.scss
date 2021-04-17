@@ -102,6 +102,7 @@
   }
   .menu-social-links {
     display: flex;
+    flex-wrap: wrap;
   }
   .menu-social-link__link {
     font-family: Roboto;
